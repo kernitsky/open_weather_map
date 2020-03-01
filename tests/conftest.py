@@ -8,6 +8,7 @@ USER_EMAIL = "some_user_api_test@yopmail.com"
 USER_PASSWORD = "1234567890"
 FILENAME = 'D:/apikey.txt'
 
+
 @pytest.fixture()
 def webdriver_init():
     return webdriver.Chrome()
