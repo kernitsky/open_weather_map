@@ -54,7 +54,6 @@ def save_api_key_to_file(login_to_open_weather_map, webdriver_init, file=FILENAM
 
 # this function can take filename as argument but 'by-default' uses 'D:/apikey.txt' as filename.
 @pytest.fixture()
-def get_api_key_from_file(save_api_key_to_file, file=FILENAME):
-    # save_api_key_to_file()
+def get_api_key_from_file(file=FILENAME):
     apikey = open(file, 'r').read()
     return apikey
